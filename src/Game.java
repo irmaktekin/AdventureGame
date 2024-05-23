@@ -35,7 +35,7 @@ public class Game {
 
             System.out.println("Please select a location:");
             int loc = scanner.nextInt();
-
+//creates locations according to user selection
             switch (loc ){
                     case 0:
                         location = null;

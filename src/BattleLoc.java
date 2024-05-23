@@ -5,17 +5,12 @@ public class BattleLoc extends Location{
     private String award;
     private int maxObstacle;
     private String locationAward;
-
-
-
     public String getLocationAward() {
         return locationAward;
     }
-
     public void setLocationAward(String locationAward) {
         this.locationAward = locationAward;
     }
-
 
     public BattleLoc(Player player, String name, Obstacle obstacle, String award, int maxObstacle,String locationAward) {
         super(player, name);
@@ -80,6 +75,7 @@ public class BattleLoc extends Location{
             }
             return false;
     }
+    //creates random number for max obstacle.
     public int randomObstacleNumber(){
         Random r = new Random();
         return r.nextInt(this.getMaxObstacle())+1;
@@ -95,7 +91,7 @@ public class BattleLoc extends Location{
 
     }
 
-    //fighting
+    //combat
     public boolean combat(int obsNumber) {
         Random random = new Random();
 
